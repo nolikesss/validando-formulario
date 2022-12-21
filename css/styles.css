@@ -1,0 +1,135 @@
+.container {
+  width: 100%;
+  max-width: 75vw;
+  height: 100vh;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* TEXTS =========== */
+.texts {
+  width: 100%;
+  max-width: 500px;
+}
+
+.texts h1 {
+  font-size: 3em;
+  margin-bottom: 24px;
+}
+
+/* FORM CONTAINER ============= */
+.form-container {
+  width: 100%;
+  max-width: 500px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe-message {
+  background-color: var(--blue);
+  color: #FFF;
+  padding: 24px 8px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscribe-message strong {
+  margin: 5px;
+}
+
+/* FORM ========== */
+form {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: #FFF;
+  padding: 40px 24px;
+  border-radius: 8px;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+form .form-group {
+  display: flex;
+  flex-direction: column;
+
+  height: 80px;
+  margin-bottom: 16px;
+  position: relative;
+
+}
+
+form .form-group input {
+  height: 60px;
+  border: 2px solid var(--grayishBlue);
+}
+
+form .form-group input:focus {
+  border-color: var(--blue);
+}
+
+form .form-group input.error-active {
+  border-color: var(--red);
+}
+
+form .infos-error {
+  display: flex;
+  flex-direction: column; 
+  display: none; 
+}
+
+.infos-error .msg-error {
+  color: var(--red);
+  align-self: flex-end;   /* Utilizando o flex-end a frase fica no final do input  */
+  margin-top: 5px;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+.infos-error .icon-error {
+  color: var(--red);
+  font-size: 1.6em;
+  position: absolute;
+  align-self: flex-end;
+  top: 20%;
+  right: 5%;
+}
+
+form button {
+  border: 0;
+  background-color: var(--green);
+  color: #FFF;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+form button:hover {
+  background-color: var(--darkGreen);
+  box-shadow: inset 2px 2px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.term-message {
+  color: var(--grayishBlue);
+  font-size: 0.7em;
+  font-weight: 600;
+  margin-top: 16px;
+  text-align: center;
+
+}
+
+.term-message a {
+  text-decoration: none;
+  color: var(--red);
+  font: 700;
+}
